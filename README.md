@@ -1,1 +1,1 @@
-schulerbot.github.io
+https://schulerbot.github.io
