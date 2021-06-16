@@ -159,6 +159,8 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette</li>
 
+<li>$:/config/RelinkOnRename</li>
+
 <li>$:/core</li>
 
 <li>$:/core/ui/SideBar/More</li>
@@ -231,7 +233,15 @@ Error message and password prompt
 
 <li>schulerbot/tiddler/1</li>
 
+<li>schulerbot/tiddler/2</li>
+
+<li>schulerbot/tiddler/todo/1</li>
+
+<li>schulerbot/tiddler/todo/2</li>
+
 <li>StickyEditor</li>
+
+<li>To-Do List</li>
 
 </ul>
 </p>
@@ -289,6 +299,9 @@ placeholder=&quot;$placeholder$&quot;/&gt;
 </div>
 <div created="20210424182805117" creator="schulerbot" modified="20210424182808281" modifier="schulerbot" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/palette">
 <pre>hide</pre>
+</div>
+<div created="20210616015304619" creator="schulerbot" modified="20210616015304619" modifier="schulerbot" title="$:/config/RelinkOnRename">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
@@ -10231,7 +10244,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 &lt;/$set&gt;
 </pre>
 </div>
-<div created="20210424183046116" creator="schulerbot" modified="20210424184050194" modifier="schulerbot" tags="$:/tags/SideBarSegment" title="$:/core/ui/SideBarSegments/search">
+<div created="20210424183046116" creator="schulerbot" modified="20210616014530629" modifier="schulerbot" tags="" title="$:/core/ui/SideBarSegments/search">
 <pre>\whitespace trim
 
 \define count-popup-button()
@@ -10590,7 +10603,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210424183835831" creator="schulerbot" modified="20210424183835832" modifier="schulerbot" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Plugins</pre>
 </div>
-<div created="20210424183004997" creator="schulerbot" modified="20210511153700018" modifier="schulerbot" title="$:/state/tab/sidebar--595412856">
+<div created="20210424183004997" creator="schulerbot" modified="20210616015503910" modifier="schulerbot" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20210424182745461" creator="schulerbot" modified="20210424182753698" modifier="schulerbot" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10602,7 +10615,7 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
 <div created="20210424182410377" creator="s" modified="20210424182411608" modifier="schulerbo" title="$:/status/UserName">
 <pre>schulerbot</pre>
 </div>
-<div list="schulerbot/tiddler/1 Home" title="$:/StoryList">
+<div created="20210616014342736" creator="schulerbot" list="schulerbot/tiddler/1 schulerbot/tiddler/2 Home" modified="20210616015654803" modifier="schulerbot" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10714,16 +10727,33 @@ $:/config/PageControlButtons/Visibility/$(listItem)$
     }
 }</pre>
 </div>
-<div created="20210424181558383" creator="schulerbot" modified="20210424181630665" modifier="schulerbot" tags="" title="Home">
-<pre>Hi.  I'm schulerbot.  Welcome to my site.</pre>
+<div created="20210424181558383" creator="schulerbot" modified="20210616015444847" modifier="schulerbot" tags="" title="Home">
+<pre>Hi.  I'm schulerbot.  Welcome to my site.
+
+&lt;&lt;list-links &quot;[tag[Home]sort[title]]&quot;&gt;&gt;
+</pre>
 </div>
-<div created="20210511153338353" creator="schulerbot" modified="20210511153656489" modifier="schulerbot" tags="" title="schulerbot/tiddler/1">
+<div caption="I quit" created="20210511153338353" creator="schulerbot" modified="20210616015717737" modifier="schulerbot" tags="" title="schulerbot/tiddler/1">
 <pre>Day 1 for my tobacco/nicotine quit was April 23, 2021.  I am 19 days quit.
 
 </pre>
 </div>
+<div caption="Tiddler Stream" created="20210616015519674" creator="schulerbot" modified="20210616015757836" modifier="schulerbot" tags="Home" title="schulerbot/tiddler/2">
+<pre>&lt;&lt;list-links &quot;[regexp[tiddler]!regexp[todo]sort[modified]]&quot;&gt;&gt;
+</pre>
+</div>
+<div caption="Add Tiddlywiki link to right side" created="20210616014625715" creator="schulerbot" modified="20210616015306232" modifier="schulerbot" tags="" title="schulerbot/tiddler/todo/1">
+<pre>*put it in the subtitle</pre>
+</div>
+<div caption="Add to-do platform" created="20210616015336391" creator="schulerbot" modified="20210616015418988" modifier="schulerbot" tags="" title="schulerbot/tiddler/todo/2">
+<pre>*modified version of twtasks?</pre>
+</div>
 <div created="20210424183049008" creator="schulerbot" modified="20210424184046891" modifier="schulerbot" tags="$:/tags/Stylesheet" title="StickyEditor">
 <pre></pre>
+</div>
+<div created="20210616014448605" creator="schulerbot" modified="20210616015121439" modifier="schulerbot" tags="Home" title="To-Do List">
+<pre>&lt;&lt;list-links &quot;[regexp[todo]sort[modified]]&quot;&gt;&gt;
+</pre>
 </div>
 
 
